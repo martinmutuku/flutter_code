@@ -26,7 +26,13 @@ class _MyAppState extends State<MyApp> {
                 Container(
                   margin: EdgeInsets.all(10.0),
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        _Products.add('Advanced food Tester');
+                        //print(_Products);
+                      });
+
+                    },
                     child: Text('Add Product'),
                   ),),
                 Column(
